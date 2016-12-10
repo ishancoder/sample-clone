@@ -1,0 +1,17 @@
+.custom-text-field > input {
+    background: #5C6BC0;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    border-radius: 5px;
+    outline: none;
+    opacity: 50%;
+    width: 100%;
+    border: none;
+}
+
+.custom-text-field > input:focus {
+    background-color: white;
+    color: black;
+    text-align: left;
+}
