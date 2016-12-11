@@ -1,0 +1,39 @@
+<section>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title mdl-cell mdl-cell--3-col">Title</span>
+
+            <div class="custom-text-field mdl-cell mdl-cell--6-col">
+                <input type="text" ng-model="search.$" id="sample1" placeholder="Search">
+            </div>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Title</span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+        <div class="page-content">
+            <!-- Your content goes here -->
+            <div class="mdl-grid grid-box">
+                <div class="mdl-cell mdl-cell--3-col-desktop mdl-cell--12-col-phone card" ng-repeat="article in array | filter:search:strict">
+                    <div class="card-image" bg-img="{{article.articleImage}}"></div>
+                    <div class="card-content">
+                        <h4>{{article.title}}</h4>
+                        <div class="mdl-grid">
+                            <div class="mdl-cell--2-col"> <img class="circle" ng-src="{{article.profilePic}}" height="25" width="25"/></div>
+                            <div class="mdl-cell--10-col"> by {{article.author}} in {{article.industry}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+</section>
