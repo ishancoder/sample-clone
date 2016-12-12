@@ -83,7 +83,7 @@ body {
     top: 0;
 }
 
-.enable:hover::after {
+.dropdown:hover .enable::after {
     content: ' \F106';
     font-family: FontAwesome;
     right: 15px;
@@ -101,6 +101,7 @@ body {
 .nav-bar>.dropdown {
     display: inline-block;
     padding: 1em;
+    cursor: pointer;
     border-right: 1px solid #ebeff1;
     color: gray;
 }
