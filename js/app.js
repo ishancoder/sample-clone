@@ -1,4 +1,4 @@
-let app = angular.module("myApp", ["ngRoute"]);
+let app = angular.module("myApp", ["ngRoute", "angular.filter"]);
 
 app.controller("mainController", ['$scope', 'imageFactory', '$location', function($scope, imageFactory, $location) {
     $scope.array = imageFactory.array;
@@ -29,84 +29,96 @@ app.factory("imageFactory", [function() {
             author: "Ishan Saxena",
             industry: "Web Development",
             title: "Lorem Ipsum",
-            profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100"
+            profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100",
+            category: "Web Development"
         },
         {
             articleImage: "https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97300&w=400&h=300",
             author: "Rajat Patwa",
             industry: "Machine Learning",
             title: "Lorem Ipsum",
-            profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100"
+            profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100",
+            category: "Artificial Intelligence"
         },
         {
             articleImage: "https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97300&w=400&h=300",
             author: "Lalit Kishor Singh",
             industry: "Artificial Intelligence",
             title: "Lorem Ipsum",
-            profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100"
+            profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100",
+            category: "Artificial Intelligence"
         },
         {
             articleImage: "https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97300&w=400&h=300",
             author: "Abhimanyu Singh",
-            industry: "Computer Science",
+            industry: "Data Analysis",
             title: "Lorem Ipsum",
-            profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100"
+            profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100",
+            category: "Data Science"
         },
         {
             articleImage: "https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97300&w=400&h=300",
             author: "Gopal Singh",
             industry: "Game Development",
             title: "Lorem Ipsum",
-            profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100"
+            profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100",
+            category: "Game Development"
         },
         {
             articleImage: "https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97300&w=400&h=300",
             author: "Naman Kumar",
-            industry: "Big Data",
+            industry: "Hadoop",
             title: "Lorem Ipsum",
-            profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100"
+            profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100",
+            category: "Big Data"
         },
         {
             articleImage: "https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97300&w=400&h=300",
             author: "Omprakash",
             industry: "Java Developer",
             title: "Lorem Ipsum",
-            profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100"
+            profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100",
+            category: "Software Development"
         },
         {
             articleImage: "https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97300&w=400&h=300",
             author: "John Doe",
             industry: "Researcher Black Holes",
             title: "Lorem Ipsum",
-            profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100"
+            profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100",
+            category: "Astronomy"
         },
         {
             articleImage: "https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97300&w=400&h=300",
             author: "Michio Kaku",
             industry: "Astronomy",
             title: "Lorem Ipsum",
-            profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100"
+            profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100",
+            category: "Astronomy"
         },
         {
             articleImage: "https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97300&w=400&h=300",
             author: "Udit Gangwani",
             industry: "Prolanceer",
             title: "Lorem Ipsum",
-            profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100"
+            profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100",
+            category: "Web Development"
         },
         {
             articleImage: "https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97300&w=400&h=300",
             author: "Manoj Kumar",
-            industry: "Web Developer",
+            industry: "Web Development",
             title: "Lorem Ipsum",
-            profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100"
+            profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100",
+            category: "Web Development"
         },
         {
             articleImage: "https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97300&w=400&h=300",
             author: "Atul Sharma",
-            industry: "Web Developer",
+            industry: "Front End Development",
             title: "Lorem Ipsum",
-            profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100"
+            profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100",
+            category: "Web Development"
         }
     ]};
 

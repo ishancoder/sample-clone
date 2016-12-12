@@ -14,7 +14,7 @@ body {
 }
 
 .card-content img {
-    margin-top: calc(50% - 12px);
+    padding: 0.5em;
 }
 
 .custom-text-field > input {
@@ -95,7 +95,8 @@ body {
 }
 
 .dropdown:hover .dropdown-content{
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .dropdown:hover .enable {
@@ -131,6 +132,9 @@ body {
     background-color: lightgray;
     color: black;
     padding: 0.5em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    display: inline-block;
     border-radius: 2px;
 }
 
