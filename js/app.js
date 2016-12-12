@@ -30,7 +30,8 @@ app.factory("imageFactory", [function() {
             industry: "Web Development",
             title: "Lorem Ipsum",
             profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100",
-            category: "Web Development"
+            category: "Web Development",
+            platform: "Web"
         },
         {
             articleImage: "https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97300&w=400&h=300",
@@ -38,7 +39,8 @@ app.factory("imageFactory", [function() {
             industry: "Machine Learning",
             title: "Lorem Ipsum",
             profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100",
-            category: "Artificial Intelligence"
+            category: "Artificial Intelligence",
+            platform: "Windows"
         },
         {
             articleImage: "https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97300&w=400&h=300",
@@ -46,7 +48,8 @@ app.factory("imageFactory", [function() {
             industry: "Artificial Intelligence",
             title: "Lorem Ipsum",
             profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100",
-            category: "Artificial Intelligence"
+            category: "Artificial Intelligence",
+            platform: "Web"
         },
         {
             articleImage: "https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97300&w=400&h=300",
@@ -54,7 +57,8 @@ app.factory("imageFactory", [function() {
             industry: "Data Analysis",
             title: "Lorem Ipsum",
             profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100",
-            category: "Data Science"
+            category: "Data Science",
+            platform: "Windows"
         },
         {
             articleImage: "https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97300&w=400&h=300",
@@ -62,7 +66,8 @@ app.factory("imageFactory", [function() {
             industry: "Game Development",
             title: "Lorem Ipsum",
             profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100",
-            category: "Game Development"
+            category: "Game Development",
+            platform: "Windows"
         },
         {
             articleImage: "https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97300&w=400&h=300",
@@ -70,7 +75,8 @@ app.factory("imageFactory", [function() {
             industry: "Hadoop",
             title: "Lorem Ipsum",
             profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100",
-            category: "Big Data"
+            category: "Big Data",
+            platform: "Web"
         },
         {
             articleImage: "https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97300&w=400&h=300",
@@ -78,7 +84,8 @@ app.factory("imageFactory", [function() {
             industry: "Java Developer",
             title: "Lorem Ipsum",
             profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100",
-            category: "Software Development"
+            category: "Software Development",
+            platform: "Windows"
         },
         {
             articleImage: "https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97300&w=400&h=300",
@@ -86,7 +93,8 @@ app.factory("imageFactory", [function() {
             industry: "Researcher Black Holes",
             title: "Lorem Ipsum",
             profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100",
-            category: "Astronomy"
+            category: "Astronomy",
+            platform: "Web"
         },
         {
             articleImage: "https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97300&w=400&h=300",
@@ -94,7 +102,8 @@ app.factory("imageFactory", [function() {
             industry: "Astronomy",
             title: "Lorem Ipsum",
             profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100",
-            category: "Astronomy"
+            category: "Astronomy",
+            platform: "Windows"
         },
         {
             articleImage: "https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97300&w=400&h=300",
@@ -102,7 +111,8 @@ app.factory("imageFactory", [function() {
             industry: "Prolanceer",
             title: "Lorem Ipsum",
             profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100",
-            category: "Web Development"
+            category: "Web Development",
+            platform: "Windows"
         },
         {
             articleImage: "https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97300&w=400&h=300",
@@ -110,7 +120,8 @@ app.factory("imageFactory", [function() {
             industry: "Web Development",
             title: "Lorem Ipsum",
             profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100",
-            category: "Web Development"
+            category: "Web Development",
+            platform: "Windows"
         },
         {
             articleImage: "https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97300&w=400&h=300",
@@ -118,7 +129,8 @@ app.factory("imageFactory", [function() {
             industry: "Front End Development",
             title: "Lorem Ipsum",
             profilePic: "https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100",
-            category: "Web Development"
+            category: "Web Development",
+            platform: "Windows"
         }
     ]};
 
