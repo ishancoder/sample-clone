@@ -76,6 +76,10 @@ body {
     background-color: white;
 }
 
+.enable {
+    cursor: pointer;
+}
+
 .enable::after {
     content: ' \F107';
     font-family: FontAwesome;
