@@ -41,7 +41,8 @@ body {
 }
 
 .card {
-    width: 30%;
+    width: 32%;
+    min-width: 300px;
     transition: box-shadow 300ms;
     -webkit-transition: box-shadow 300ms;
 }
@@ -136,6 +137,54 @@ body {
     margin-bottom: 1em;
     display: inline-block;
     border-radius: 2px;
+}
+
+#menu-button {
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.custom-drawer-show {
+    display: block;
+    padding: 2em 0 2em 1.5em;
+    width: 20%;
+    background: white;
+    position: fixed;
+    float: left;
+    height: 100vh;
+    margin: 0;
+    -webkit-transition: -webkit-transform 0.5s;
+}
+
+.custom-drawer-hide {
+    background: white;
+    display: block;
+    width: 20%;
+    float: left;
+    position: fixed;
+    height: 100vh;
+    -webkit-transform: translateX(-100%);
+    -webkit-transition: -webkit-transform 0.5s;
+}
+
+.show {
+    transition: margin-left 0.5s;
+    margin-left: calc(20% + 1.5em);
+}
+
+.custom-header {
+    width: 100%;
+    background: #3F51B5;
+    color: white;
+}
+
+.custom-navigation {
+    position: relative;
+}
+
+.custom-navigation a {
+    display: block;
+    margin-top: 1.5em;
 }
 
 .dropdown-content > a:hover {

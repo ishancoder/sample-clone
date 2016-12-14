@@ -2,6 +2,9 @@ let app = angular.module("myApp", ["ngRoute", "angular.filter"]);
 
 app.controller("mainController", ['$scope', 'imageFactory', '$location', function($scope, imageFactory, $location) {
     $scope.array = imageFactory.array;
+    $scope.menuOpen = false;
+
+
     let query = $location.hash();
     if(query) {
         $scope.search = query;
@@ -9,6 +12,11 @@ app.controller("mainController", ['$scope', 'imageFactory', '$location', functio
 
     $scope.changeSearchParam = function(newStr) {
         $scope.search = newStr;
+    }
+
+    $scope.toggleMenu = function() {
+        $scope.menuOpen = !$scope.menuOpen;
+        console.log($scope.menuOpen);
     }
 }]);
 
